@@ -2,7 +2,7 @@
 			
 // pass in one or more sql statement as parameter and the result is returned
 function multi_query($sql) {
-	$mysqli = new mysqli('localhost', 'Jirex', 'xek5hsh7vhk', 'info230_SP13FP_Jirex');
+	$mysqli = new mysqli('localhost', 'Jirex', 'password', 'DatabaseName');
 	
 	if($mysqli->errno) {
 		print($mysqli->error);
@@ -16,7 +16,7 @@ function multi_query($sql) {
 
 // pass in exactly one sql statement as parameter and the result is returned
 function query($sql) {
-	$mysqli = new mysqli('localhost', 'Jirex', 'xek5hsh7vhk', 'info230_SP13FP_Jirex');
+	$mysqli = new mysqli('localhost', 'Jirex', 'password', 'DatabaseName');
 	
 	if($mysqli->errno) {
 		print($mysqli->error);
@@ -510,7 +510,7 @@ function generateBlogList($term) {
 function searchBlog($input){
 	$input="%".$input."%";
 	$outputList = array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli)) {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}

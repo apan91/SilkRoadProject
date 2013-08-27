@@ -5,7 +5,7 @@
 function getSortedBlog($sortMethod){
 	$blogList=array();
 	
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -43,7 +43,7 @@ function getSortedBlog($sortMethod){
 //returns a associative list for a specific user based on their ID
 function getUser($userID){
 	$userList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -68,7 +68,7 @@ function getUser($userID){
 }
 function getTags($postID){
 	$tagList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -93,7 +93,7 @@ function getTags($postID){
 function getComments($postID){
 	
 	$commentsList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -292,7 +292,7 @@ function DisplaySummaryUrl($postID){
 function getSingleBlog($postID){
 
 	$post=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -474,7 +474,7 @@ function DisplayBlogSummaryPagination($numPerPage){
 }
 //opens the database and counts how many blog posts exists
 function getTotalEntries(){
-$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -500,7 +500,7 @@ $mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex")
 //gets the top tags (5 or 10)
 function getTopTags(){
 	$tagList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -541,7 +541,7 @@ function displayTopTags($tagList){
 //given tag ID, the function gets the blog posts associated with that tag ordered by date.
 function getBlogsByTag($tagID){
 	$blogList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -569,7 +569,7 @@ function getBlogsByTag($tagID){
 //gets the top Authors 10
 function getTopAuthors(){
 	$authorList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -607,7 +607,7 @@ function displayAuthorsSingle($author){
 //given author ID, the function gets the blog posts associated with that author ordered by date.
 function getBlogsByAuthor($authorID){
 	$authorList=Array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -674,7 +674,7 @@ function insertBlogEntry($userID,$title,$post,$url,$date,$tagsRaw){
 
 	//do something with tags
 	if ($noErrors){
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -878,7 +878,7 @@ function changeBlogEntry($userID,$postID,$checkList,$date){
 
 	//do something with tags
 	if ($noErrors){
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1032,7 +1032,7 @@ function insertComments($postID,$userID,$post,$date){
 	}
 	//do something with tags
 	if ($noErrors){
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1075,7 +1075,7 @@ function displayCommentInput($blogID){
 function displayLikeButton($postID,$userID){
 	if (!(isset($_POST['likeSubmit']) && !empty($_POST['likeSubmit']))){
 		//	processLike($postID,$userID);
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		{
 			echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1096,7 +1096,7 @@ function displayLikeButton($postID,$userID){
 }
 //add the like to the post
 function processLike($postID,$userID){
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1121,7 +1121,7 @@ function processLike($postID,$userID){
 //displaying blog name and having the dropdownlist value being blog's blogID
 function displayBlogList(){
 		$userID=$_SESSION['logged'];
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1140,7 +1140,7 @@ function displayBlogList(){
 ## delete Posts
 	
 function deletePost($postID){
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1166,7 +1166,7 @@ function deletePost($postID){
 ##edit/delete comments
 function editComment($postID,$userID,$date,$post){
 	
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1187,7 +1187,7 @@ function editComment($postID,$userID,$date,$post){
 }
 function deleteComment($postID,$userID,$date){
 	
-		$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+		$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 		if (mysqli_connect_errno($mysqli))
 		  {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1224,7 +1224,7 @@ function displayAllTags(){
 //outputs a list of them
 function getAllTags(){
 	$tagList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -1249,7 +1249,7 @@ function getAllTags(){
 //outputs a list of them
 function getAllAuthors(){
 	$authorList=array();
-	$mysqli = new mysqli("localhost", "Jirex","xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex","password", "DatabaseName");
 	if (mysqli_connect_errno($mysqli))
 	  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();

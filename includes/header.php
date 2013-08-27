@@ -1,7 +1,7 @@
 <?php
 	if (!isset($_SESSION))
 		session_start();
-	$mysqli = new mysqli("localhost", "Jirex", "xek5hsh7vhk", "info230_SP13FP_Jirex");
+	$mysqli = new mysqli("localhost", "Jirex", "password", "DatabaseName");
 	if ($mysqli->errno) {
 		print($mysqli->error);
 		exit();
