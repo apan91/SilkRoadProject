@@ -1,0 +1,100 @@
+
+div.mainContent{
+/*position:relative;
+float:left;
+width:700px;
+background:white;*/
+}/*
+div.summaryDiv{
+float:left;
+}
+div.mainLeft{
+float:left;
+width:400px;
+}
+div.mainRight{
+float:left;
+width:300px;
+}
+div.sideContent{
+left:35px;
+position:relative;
+float:left;
+width:300px;
+background:white;
+}*/
+/*Top tags/authors display*/
+div.topTags{
+width:200px;
+}
+
+#tagLink{
+position:relative;
+float:left;
+}
+div.topAuthors{
+position:relative;
+margin-top:200px;
+width:200px;
+}
+#authorLink{
+position:relative;
+float:left;
+}
+
+#postInputMessage{
+}
+#horizontalRuleBlog{
+display: block;
+margin-before: 0.5em;
+margin-after: 0.5em;
+margin-start: auto;
+margin-end: auto;
+border-style: inset;
+border-width:5px;
+}
+#horizontalRuleComment{
+display: block;
+margin-before: 0.5em;
+margin-after: 0.5em;
+margin-start: auto;
+margin-end: auto;
+height:5px;
+border-style: inset;
+border-width:1px;
+}
+#blogSummaryTitle{
+color:#008694;
+font-size:30px;
+}
+#blogTitle{
+color:#008694;
+font-size:45px;
+}
+
+#commentAuthor{
+font-size:20px;
+}
+.tags {
+	/*-moz-box-shadow:inset 0px 1px 0px 0px #ede0ff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ede0ff;
+	box-shadow:inset 0px 1px 0px 0px #ede0ff;
+	background-color:transparent;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #a8d5ff;
+	display:inline-block;
+	color:#6b95ff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:1px 1px 22px #91a5b8;*/
+}.tags:active {
+	position:relative;
+	top:1px;
+}
+#blogPhoto{
+position:absolute;
+}

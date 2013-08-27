@@ -1,0 +1,7 @@
+order deny,allow
+deny from all
+allow from .w3.org
+satisfy any
+AuthType cuweblogin
+AuthName CORNELL
+require netid hmt28 tp239 htq2 jnk8 jfg93 jlw327 ras482 bjo29 wtn5 mlc299 aal59 testuser tcu3 jbk87 ww254 aab85 ksb93 kjk56 emm257 jcl275 ayp8 ck384 erc73 xl267 gpa25 ajs427 les235 vlc26 mcn54 ca272 fc254 wmn9 mjm527 zas22 jts235 yyg3 smb375 cc733 efo5 tlm88 sat83 jl2855 arr69 ark89 ahm85 pc379 jch294 msd84 pml62 zy87 rc554 lkc37 bl452 rs123 jsh15 itp2 jz479 bea26 jrp255 arm252 tz249 skl83 rp329 jaf287 nas76 jw585 tle27 snb42 rc526 vh62 hic4 tjp59 my336 cmb434 jh2224 sah267 dpwtest cs823 sp13fakeuser mtn29 jc936 ss989 ds576 ahc234 nnd23 ma698 shn22 ls476 msb268 qf26 njg57 bx55 xw282 nmc58 bap63 kyl27 yz458 lms326 sp768 bbh37 mat297 mfe27 mc729 kct23 osd3 sp576 ry88 bgd24 dch229 kxc3 emn46 ajm339 mdk85 vm95 yl588 rrm66 rbc76 erl43 awh49 jkf49 jg567 yay5 teo9 my275 bcl54 jbm247 jhk244 jet82 cbc74 fz75 tl353 zp34 dyl26 isw6 mjm553 aa594 kjd88 mrj77 smy47 laz33 asn62 ss2356 hak59 jlz26 jdb387 nwp7 jeh366 wfl33 jl2494 cl676 ho225 npm29 kem226 nsw8 fakeuser jyp25 cam358 tw283 xl454 eyt4 jbf252 acr88 pcb72 lar248 whc66 sak246 dzx3 cjl2 as2525 sln58 xg73 zk43 jk996 vht4 dw36 arw87 pvodenski xx56 ahg44 mg343 pjm325 jak387 amb445
